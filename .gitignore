@@ -20,5 +20,6 @@ database/development.sqlite
 **/*/.DS_Store
 
 public/*
+!public/.gitkeep 
 
 yarn-error.log
