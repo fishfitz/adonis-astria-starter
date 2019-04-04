@@ -3,9 +3,9 @@ const User = use('App/Models/User');
 
 module.exports = {
   query: {
-    email: 'required|email|normalize_email|trim',
-    password: 'required',
-    reset_token: 'required|trim'
+    email: ['required|email', 'normalize_email|trim'],
+    password: ['required'],
+    reset_token: ['required', 'trim']
   },
   async handle({ query }) {
     const user = await User.findByOrFail('email', query.email);

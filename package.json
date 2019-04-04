@@ -28,7 +28,7 @@
     "@adonisjs/validator": "^5.0.6",
     "adonis": "^0.9.0",
     "adonis-commands": "^2.1.5",
-    "astria": "https://github.com/cobaltway/astria.git",
+    "adonis-astria": "^0.0.1",
     "fs-extra": "^5.0.0",
     "lodash": "^4.17.5",
     "moment": "^2.22.2",

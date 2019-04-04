@@ -1,9 +1,23 @@
-const ConfigModel = use('App/Models/Config');
+const Config = use('Config');
+const Action = use('App/Models/Action');
 
 module.exports = {
-  handle() {
-    return ConfigModel.query()
-      .orderBy('key', 'asc')
-      .fetch();
+  query: { backoffice: ['boolean', 'to_boolean'] },
+  handle({ auth, query: { backoffice }, request }) {
+    if (!backoffice) {
+      Action.create({
+        user_id: auth && auth.user ? auth.user.id : null,
+        type: 'active',
+        label: request.header('User-Agent')
+      });
+    }
+
+    return {
+      app_version: Config.get('APP_VERSION'),
+
+      default_lang: Config.get('DEFAULT_LANG'),
+      available_langs: Config.get('AVAILABLE_LANGS'),
+      default_content: backoffice ? Config.get('DEFAULT_CONTENT') : undefined
+    };
   }
 };

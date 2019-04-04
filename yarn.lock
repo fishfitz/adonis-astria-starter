@@ -238,6 +238,14 @@ acorn@^6.0.2:
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.4.tgz#77377e7353b72ec5104550aa2d2097a2fd40b754"
 
+adonis-astria@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/adonis-astria/-/adonis-astria-0.0.1.tgz#0aeb0202ab7bf6790a0e277848804edee1f0553b"
+  integrity sha512-JoDxveSyZsfTDYC7mSCAxhjS/HqDeWRd7GTIsEz9mrNsxoGgjWpmGkpyxGZ0gRtlAX3HXDXAIPrm+Uu7kkpPnw==
+  dependencies:
+    klaw "^3.0.0"
+    lodash "^4.17.11"
+
 adonis-await-outside@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/adonis-await-outside/-/adonis-await-outside-1.0.0.tgz#56a11ad529e3bf4018a4ea1e804995c96cebc54c"
@@ -575,11 +583,6 @@ asap@^2.0.3:
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
-
-"astria@file:../astria":
-  version "0.0.1"
-  dependencies:
-    klaw "^3.0.0"
 
 async-each@^1.0.0:
   version "1.0.1"

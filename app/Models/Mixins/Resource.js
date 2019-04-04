@@ -1,5 +1,4 @@
 const Model = use('Model');
-const moment = use('moment');
 
 module.exports = function () {
   class Resource extends Model {
@@ -13,7 +12,7 @@ module.exports = function () {
     }
 
     static formatDates(field, value) {
-      return moment(new Date(value)).format('YYYY-MM-DD HH:mm:ss Z');
+      return new Date(value).toISOString();
     }
     static castDates(field, value) {
       return value.format('YYYY-MM-DD HH:mm:ss Z');

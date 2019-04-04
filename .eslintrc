@@ -15,7 +15,8 @@
     "import/no-dynamic-require": 0,
     "global-require": 0,
     "object-curly-newline": [2, {
-      "multiline": true
+      "multiline": true,
+      "consistent": true
     }],
     "no-param-reassign": 0,
     "no-return-assign": [2, "except-parens"],
