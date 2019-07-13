@@ -30,7 +30,7 @@
     "adonis-commands": "^2.1.5",
     "adonis-astria": "^0.0.1",
     "fs-extra": "^5.0.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.13",
     "moment": "^2.22.2",
     "pg": "^7.4.1",
     "randomstring": "^1.1.5"
